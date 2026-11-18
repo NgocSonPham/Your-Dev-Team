@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Office">
+  <rect width="32" height="32" rx="8" fill="#0b0d14"/>
+  <rect x="5" y="7" width="22" height="14" rx="3" fill="#efe3d2"/>
+  <rect x="8" y="10" width="7" height="8" rx="1.5" fill="#14b8a6"/>
+  <rect x="17" y="10" width="7" height="8" rx="1.5" fill="#b88a5e"/>
+  <rect x="12" y="23" width="8" height="3" rx="1.5" fill="#efe3d2" opacity=".7"/>
+  <circle cx="25" cy="8" r="2.4" fill="#22c55e"/>
+</svg>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Dev Team · Office</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body data-view="office">
+<header class="topbar">
+  <div class="brand">
+    <span class="mark" aria-hidden="true">▦</span>
+    <h1>Your Dev Team</h1>
+    <span class="sub">virtual office</span>
+  </div>
+  <div class="topbar-right">
+    <span class="chip mode" id="modeChip" title="Where this state comes from">starting…</span>
+    <div class="views" role="tablist" aria-label="View">
+      <button id="tabOffice" class="tab" role="tab" aria-selected="true" aria-controls="office" tabindex="0">Office</button>
+      <button id="tabBoard" class="tab" role="tab" aria-selected="false" aria-controls="board" tabindex="-1">Wall board</button>
+    </div>
+    <span class="updated" id="updated" aria-live="polite">—</span>
+  </div>
+</header>
+
+<div class="banner" id="banner" role="status" hidden></div>
+
+<div class="filters" id="filters" role="group" aria-label="Filter people by status"></div>
+
+<main>
+  <section id="office" class="office" aria-label="The office">
+    <div class="rooms" id="rooms"></div>
+    <div class="empty" id="officeEmpty" hidden>
+      <p class="empty-title">No one is in the office yet.</p>
+      <p class="empty-body">Start a terminal or a worktree — this view shows Orca terminals, and falls back to git worktrees when Orca is not available.</p>
+    </div>
+  </section>
+
+  <section id="board" class="board" aria-label="The wall board" hidden>
+    <div class="board-head">
+      <h2>Wall board</h2>
+      <p id="boardRepo" class="board-repo">—</p>
+      <button id="boardClose" class="ghost" aria-label="Close the wall board">Close</button>
+    </div>
+    <div class="board-body">
+      <div class="lanes" id="lanes"></div>
+      <aside class="events" aria-label="Recent activity">
+        <h3>Recent activity</h3>
+        <ol id="events"></ol>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="ticker" aria-label="Live status">
+  <span class="ticker-label">LIVE FEED</span>
+  <span class="ticker-line" id="ticker">waiting for the first event…</span>
+  <span class="ticker-count" id="counts"></span>
+</footer>
+
+<script src="/app.js" type="module"></script>
+</body>
+</html>

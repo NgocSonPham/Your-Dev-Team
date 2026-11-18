@@ -1,0 +1,10 @@
+{
+  "entryFiles": [
+    "AGENTS.md"
+  ],
+  "knowledgeDir": "docs/knowledge",
+  "tasksDir": "app/architecture/tasks",
+  "baseRef": "origin/main",
+  "taskKnowledgeSince": "2026-01-01",
+  "modules": []
+}
